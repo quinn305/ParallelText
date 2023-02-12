@@ -1,0 +1,18 @@
+{
+    "name": "Parallel Language",
+    "short_name": "Paralingua",
+    "manifest_version": 3,
+    "version": "1.0",
+    "description": "Read web articles with parallel translations.",
+    "author": "Quinn Cunningham",
+
+    "content_scripts": 
+    [
+        {
+            "matches": ["*://*/*"],
+            "all_frames": true,
+            "js": ["content_script.js"],
+            "run_at": "document_end"
+        }
+    ]
+}
